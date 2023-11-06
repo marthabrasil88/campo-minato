@@ -1,0 +1,120 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	background-image: url(zucche.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+	padding: 0px;
+	line-height: 1;
+	color: rgb(198, 0, 0);
+	font-family: 'Darker Grotesque', sans-serif;
+    font-family: 'Macondo', cursive;
+}
+
+.game-container {
+	width: 484px;
+    margin: 50px 50px 50px 450px;
+}
+
+
+h1 {
+	font-size: 40px;
+}
+
+.score {
+	font-size: 32px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.game-board {
+	position: relative;
+	border: 2px solid rgb(157, 31, 0);
+}
+
+.grid {
+	height: 480px;
+	width: 480px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.cell {
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	
+}
+
+.cell-dark {
+	background-color: rgb(223, 6, 6);
+}
+
+.cell:hover,
+.cell-clicked {
+	background-color: rgb(0, 0, 0);
+}
+
+.cell-bomb {
+	background-color: rgb(196, 46, 0);
+	background-image: url(pipistrello.gif);
+	background-size: contain;
+}
+
+.cell-clicked,
+.cell-bomb {
+	cursor: not-allowed;
+}
+
+
+.end-game-screen {
+	background-color: rgba(14, 8, 7, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.win {
+	background-color: rgba(78, 241, 187, 0.6);
+}
+
+.end-game-text {
+	font-size: 48px;
+	line-height: 1.2;
+	font-family: 'Press Start 2P', cursive;
+	margin-bottom: 16px;
+}
+
+button {
+	border: 2px solid rgb(0, 23, 50);
+	font-size: 24px;
+	font-family: 'Darker Grotesque', sans-serif;
+	text-transform: uppercase;
+	padding: 4px 20px 8px 20px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(203, 224, 221);
+}
+
+.hidden {
+	display: none;
+}
